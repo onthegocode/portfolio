@@ -1,10 +1,32 @@
 .nav__container {
 	display: flex;
 	justify-content: space-between;
-	padding: 40px 0;
+	align-items: center;
+	padding: 4rem 0;
 }
 
 .nav__container section {
 	display: flex;
-	gap: 2rem;
+	gap: 3rem;
+}
+a:hover .nav-logo {
+	transition: 0.3s ease;
+}
+a:hover .nav-logo {
+	transition: 0.3s ease;
+	animation: dash 2s ease-in;
+}
+
+@keyframes dash {
+	0% {
+		stroke-dasharray: 0;
+		stroke-dashoffset: 0;
+	}
+	60% {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+	}
+	85% {
+		stroke-dashoffset: 0;
+	}
 }

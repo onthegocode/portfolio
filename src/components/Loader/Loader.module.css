@@ -1,172 +1,56 @@
-*,
-*::after,
-*::before {
-	padding: 0;
-	margin: 0;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-html,
-body {
-	height: 100%;
-	overflow: hidden;
-}
-
-body {
+.loader__container {
 	height: 100vh;
-	background: #030321;
-	font-family: Arial;
 	width: 100vw;
-	display: -ms-grid;
 	display: grid;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-ms-flex-line-pack: center;
-	align-content: center;
+	place-items: center;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 10;
+	animation: fadein 3.6s linear forwards;
 }
-.svg1 {
-	display: block;
-	font: 10.5em "Montserrat";
-	width: 1000px;
-	height: 260px;
+.loader__svg {
+	animation: dash 3s linear forwards;
 }
-.svg2 {
-	display: block;
-	font: 3em "Montserrat";
-	width: 960px;
-	height: 300px;
+.path {
+	animation: dash 2.5s linear forwards 0.3s;
 }
-
-.text-copy {
-	fill: none;
-	stroke: white;
-	stroke-dasharray: 6% 29%;
-	stroke-width: 5px;
-	stroke-dashoffset: 0%;
-	-webkit-animation: stroke-offset 5.5s infinite linear;
-	animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1) {
-	stroke: #4d163d;
-	-webkit-animation-delay: -1;
-	animation-delay: -1;
-}
-
-.text-copy:nth-child(2) {
-	stroke: #840037;
-	-webkit-animation-delay: -2s;
-	animation-delay: -2s;
-}
-
-.text-copy:nth-child(3) {
-	stroke: #bd0034;
-	-webkit-animation-delay: -3s;
-	animation-delay: -3s;
-}
-
-.text-copy:nth-child(4) {
-	stroke: #bd0034;
-	-webkit-animation-delay: -4s;
-	animation-delay: -4s;
-}
-
-.text-copy:nth-child(5) {
-	stroke: #fdb731;
-	-webkit-animation-delay: -5s;
-	animation-delay: -5s;
-}
-
-@-webkit-keyframes stroke-offset {
-	100% {
-		stroke-dashoffset: -35%;
-	}
-}
-
-@keyframes stroke-offset {
-	100% {
-		stroke-dashoffset: -35%;
-	}
-}
-
-@-webkit-keyframes pulsecolor {
+@keyframes dash {
 	0% {
-		color: #4d163d;
-	}
-	25% {
-		color: #840037;
-	}
-	50% {
-		color: #bd0034;
-	}
-	75% {
-		color: #840037;
-	}
-	100% {
-		color: #4d163d;
-	}
-}
-
-@keyframes pulsecolor {
-	0% {
-		color: #4d163d;
-	}
-	25% {
-		color: #840037;
-	}
-	50% {
-		color: #bd0034;
-	}
-	75% {
-		color: #840037;
-	}
-	100% {
-		color: #4d163d;
-	}
-}
-
-@media (max-width: 1000px) {
-	.svg1 {
-		font: 10.5em "Montserrat";
-		width: 800px;
-		height: 300px;
-	}
-}
-
-@media (max-width: 800px) {
-	.svg1 {
-		font: 10.5em "Montserrat";
-		width: 600px;
-		height: 150px;
-	}
-}
-@media (max-width: 600px) {
-	.svg1 {
-		font: 10.5em "Montserrat";
-		width: 100%;
-	}
-}
-@media (max-width: 440px) {
-	.svg1 {
-		font-size: 10.5em;
-		height: 120px;
-		width: 410px;
-	}
-}
-@media (max-width: 380px) {
-	.svg1 {
+		stroke-dasharray: 600;
+		stroke-dashoffset: 600;
+		width: 100px;
 		height: 100px;
 	}
-}
-@media (max-width: 320px) {
-	.svg1 {
-		height: 80px;
+	15% {
+		stroke-dasharray: 600;
+		stroke-dashoffset: 600;
+		width: 100px;
+		height: 100px;
+	}
+	80% {
+		stroke-dashoffset: 0;
+		width: 100px;
+		height: 100px;
+	}
+	98% {
+		width: 400px;
+		height: 400px;
+	}
+	100% {
+		stroke-dasharray: 600;
+		stroke-dashoffset: 600;
 	}
 }
 
-@media (max-width: 300px) {
-	.svg1 {
-		font-size: 10.5em;
+@keyframes fadein {
+	0% {
+		background-color: #252a34;
+	}
+	78% {
+		background-color: #252a34;
+	}
+	100% {
+		background-color: transparent;
 	}
 }

@@ -1,0 +1,30 @@
+.main__header-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8rem;
+}
+.main__header-container--inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.6rem;
+	margin-bottom: 6rem;
+}
+.highlighted-intro {
+	font-family: Montserrat, sans-serif;
+	font-weight: 600;
+	font-size: 2rem;
+	color: #08d9d6;
+	margin-bottom: 1.2rem;
+}
+
+.name {
+	font-size: 5rem;
+}
+.title {
+	font-size: 5rem;
+	color: rgba(255, 255, 255, 0.8);
+}

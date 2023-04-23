@@ -1,5 +1,6 @@
 .navlink-btn,
 .navlink-btn::after {
+	font-size: 1.6rem;
 	transition: 0.3s ease;
 }
 .navlink-btn:visited,

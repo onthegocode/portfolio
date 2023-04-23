@@ -3,11 +3,7 @@ import styles from "./NavLinks.module.css";
 
 const NavLinks = ({ url, text, on }) => {
 	return (
-		<a
-			className={styles["navlink-btn"]}
-			href={url}
-			target={on ? "_blank" : ""}
-			rel="noreferrer">
+		<a className={styles["navlink-btn"]} href={url}>
 			{text}
 		</a>
 	);
