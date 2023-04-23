@@ -9,6 +9,10 @@
 	display: flex;
 	gap: 3rem;
 }
+.nav__container-links {
+	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 0.6);
+}
 a:hover .nav-logo {
 	transition: 0.3s ease;
 }

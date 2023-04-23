@@ -12,10 +12,10 @@ const Nav = () => {
 						<Logo pathClass={styles["nav-logo"]} />
 					</a>
 				</section>
-				<section className="nav__container-links">
-					<NavLinks text="About" url="#projects" />
-					<NavLinks text="Projects" url="#about" />
-					<NavLinks text="Get In Touch" url="#GetinTouch" />
+				<section className={styles["nav__container-links"]}>
+					<NavLinks text="About" url="#projects" /> /
+					<NavLinks text="Projects" url="#about" /> /
+					<NavLinks text="Resume" url="#Resume" />
 				</section>
 			</div>
 		</nav>

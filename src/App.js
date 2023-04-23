@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader"; //make styles component only using styled-components
+import SideSocial from "./components/SideSocial/SideSocial";
 
 function App() {
 	const [loaded, setLoaded] = useState(true);
@@ -20,6 +21,7 @@ function App() {
 		<>
 			{loaded && <Loader />}
 			<Header />
+			<SideSocial />
 			<Footer />
 		</>
 	);

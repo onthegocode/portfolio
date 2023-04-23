@@ -1,0 +1,9 @@
+.btn svg {
+	transition: 0.3s ease;
+}
+.btn:hover svg {
+	transform: translateY(-3px);
+}
+.btn:hover svg path {
+	stroke: #08d9d6;
+}

@@ -6,7 +6,7 @@
 	position: fixed;
 	top: 0px;
 	right: 0px;
-	z-index: 10;
+	z-index: 100;
 	animation: fadein 3.6s linear forwards;
 }
 .loader__svg {

@@ -35,3 +35,7 @@ body::-webkit-scrollbar-thumb {
 	max-width: 1500px;
 	margin: 0 auto;
 }
+
+a:hover .upwork path {
+	fill: #08d9d6 !important;
+}
