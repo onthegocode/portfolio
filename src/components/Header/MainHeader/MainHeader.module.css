@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 8rem;
+	margin-top: 6rem;
 }
 .main__header-container--inner {
 	display: flex;
@@ -27,4 +27,14 @@
 .title {
 	font-size: 5rem;
 	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 3rem;
+}
+.text {
+	max-width: 80rem;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1.8;
+	color: rgba(255, 255, 255, 0.65);
 }

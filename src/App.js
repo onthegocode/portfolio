@@ -10,10 +10,10 @@ function App() {
 
 	//Loader
 	const loadedState = () => {
-		setTimeout(() => (document.body.style.overflowY = "visible"), 3250);
+		setTimeout(() => (document.body.style.overflowY = "visible"), 2500);
 		setTimeout(() => {
 			setLoaded(false);
-		}, 4600);
+		}, 4000);
 	};
 	window.addEventListener("load", loadedState);
 

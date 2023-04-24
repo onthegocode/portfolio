@@ -1,6 +1,5 @@
 import Nav from "./Nav/Nav";
 import MainHeader from "./MainHeader/MainHeader";
-import CompanyCarousel from "./CompanyCarousel/CompanyCarousel";
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -8,7 +7,6 @@ const Header = () => {
 		<header className={styles.header}>
 			<Nav />
 			<MainHeader />
-			<CompanyCarousel />
 		</header>
 	);
 };

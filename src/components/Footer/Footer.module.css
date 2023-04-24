@@ -1,13 +1,26 @@
 .footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-}
-.footer__container {
 	display: flex;
-	justify-content: space-around;
-	background-color: #252a34;
+	justify-content: center;
+	/* text-align: center; */
+	margin: 8rem 0 8rem 0;
+}
+.footer-text {
+	display: inline-block;
+	color: rgba(255, 255, 255, 0.65);
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.6rem;
 	font-weight: 500;
-	color: #eaeaea;
+}
+.footer-link {
+	text-decoration: none;
+}
+.footer-link span {
+	color: rgba(8, 217, 214, 0.65);
+	transition: 0.4s ease-out;
+}
+.footer-link:hover span {
+	color: #fff;
+}
+.footer-link:hover .footer-text {
+	color: #08d9d6;
 }
