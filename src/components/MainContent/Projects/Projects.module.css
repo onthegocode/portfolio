@@ -1,0 +1,7 @@
+.projects {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+	text-align: center;
+	padding: 8rem 16rem 8rem;
+}

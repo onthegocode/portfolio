@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
+import MainContent from "./components/MainContent/MainContent";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader"; //make styles component only using styled-components
 import SideSocial from "./components/SideSocial/SideSocial";
@@ -21,6 +22,7 @@ function App() {
 		<>
 			{loaded && <Loader />}
 			<Header />
+			<MainContent />
 			<SideSocial />
 			<Footer />
 		</>

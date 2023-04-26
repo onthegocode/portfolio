@@ -13,7 +13,12 @@ const MainHeader = () => {
 					applications, that meet client goals.
 				</p>
 			</div>
-			<MainBtn text="Get In Touch" link="#GetInTouch" />
+			<MainBtn
+				text="Get In Touch"
+				link="#GetInTouch"
+				btn1Color="btn1ColorRed"
+				btn2Color="btn1ColorBlue"
+			/>
 		</div>
 	);
 };

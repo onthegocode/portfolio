@@ -1,13 +1,16 @@
 .btn {
+	display: inline-block;
 	text-decoration: none;
 	padding: 20px 40px;
 	font-size: 1.5rem;
 	font-weight: 600;
 	position: relative;
 	color: inherit;
-	font-family: Montserrat, sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
-
+.btnCenter {
+	align-self: center;
+}
 .btn::after,
 .btn::before {
 	content: "";
@@ -17,13 +20,21 @@
 	left: 0;
 	bottom: 0;
 	transform: translate(0%, -4%);
-	z-index: -1;
+	z-index: 1;
 	transition: transform 0.3s ease;
 }
-.btn::after {
+.btn1ColorRed::after {
 	border: 3px solid #ff2e63;
 }
-.btn::before {
+
+.btn1ColorBlue::before {
+	border: 3px solid #08d9d6;
+}
+
+.btn2ColorRed::before {
+	border: 3px solid #ff2e63;
+}
+.btn2ColorBlue::after {
 	border: 3px solid #08d9d6;
 }
 .btn:hover::after {

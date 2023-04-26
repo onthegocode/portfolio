@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 6rem;
+	height: 60vh;
 }
 .main__header-container--inner {
 	display: flex;
@@ -37,4 +37,50 @@
 	font-size: 1.5rem;
 	line-height: 1.8;
 	color: rgba(255, 255, 255, 0.65);
+}
+
+@media only screen and (max-width: 960px) {
+	html {
+		font-size: 50%;
+	}
+	.highlighted-intro {
+		margin-bottom: 0;
+	}
+	.title {
+		margin-bottom: 2rem;
+	}
+	.main__header-container--inner {
+		margin-bottom: 4rem;
+	}
+	.text {
+		font-size: 1.6rem;
+	}
+}
+@media only screen and (max-width: 760px) {
+	.name {
+		font-size: 4rem;
+	}
+	.title {
+		font-size: 4rem;
+	}
+	.main__header-container--inner {
+		font-size: 4rem;
+	}
+	.text {
+		font-size: 1.4rem;
+	}
+}
+@media only screen and (max-width: 630px) {
+	.name {
+		font-size: 3rem;
+	}
+	.title {
+		font-size: 3rem;
+	}
+	.main__header-container--inner {
+		font-size: 3rem;
+	}
+	.text {
+		font-size: 1.2rem;
+	}
 }

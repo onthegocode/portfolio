@@ -1,0 +1,36 @@
+.referralBox,
+.referralBox:link,
+.referralBox:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: rgba(37, 42, 52, 0.95);
+	background-color: #eaeaea;
+	border-radius: 4px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 600;
+	padding: 0.4rem 1rem;
+	position: relative;
+	overflow: hidden;
+	transition: 0.3s ease;
+}
+.referralBox:hover {
+	background-color: #ff2e63;
+	color: transparent;
+}
+.referralBox:active {
+	background-color: #08d9d6;
+}
+.referralBox-inner {
+	color: transparent;
+	content: "Software Engineer";
+	position: absolute;
+	left: 8px;
+	bottom: 5px;
+	transform: translateX(110%);
+	transition: 0.3s ease;
+}
+.referralBox:hover .referralBox-inner {
+	transform: translateX(0%);
+	color: #fff;
+}

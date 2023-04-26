@@ -1,0 +1,21 @@
+.aboutKnowMe {
+	min-width: 50%;
+}
+.aboutKnowMe-h3 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 2.6rem;
+	color: #fff;
+	margin-bottom: 3rem;
+}
+.aboutKnowMe-p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.6rem;
+	color: rgba(255, 255, 255, 0.95);
+	line-height: 1.6;
+	margin-bottom: 2.5rem;
+}
+@media only screen and (max-width: 1030px) {
+	.aboutKnowMe {
+	}
+}

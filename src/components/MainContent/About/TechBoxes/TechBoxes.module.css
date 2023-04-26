@@ -1,0 +1,21 @@
+.techBox,
+.techBox:link,
+.techBox:visited {
+	text-decoration: none;
+	color: rgba(37, 42, 52, 0.95);
+	background-color: #eaeaea;
+	border-radius: 4px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 600;
+	padding: 0.4rem 1rem;
+	transition: 0.3s ease;
+}
+
+.techBox:hover {
+	background-color: #ff2e63;
+	color: #fff;
+}
+.techBox:active {
+	background-color: #08d9d6;
+}

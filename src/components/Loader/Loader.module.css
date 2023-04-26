@@ -18,23 +18,23 @@
 	0% {
 		stroke-dasharray: 600;
 		stroke-dashoffset: 600;
-		width: 100px;
-		height: 100px;
+		width: 12rem;
+		height: 12rem;
 	}
 	15% {
 		stroke-dasharray: 600;
 		stroke-dashoffset: 600;
-		width: 100px;
-		height: 100px;
+		width: 12rem;
+		height: 12rem;
 	}
 	80% {
 		stroke-dashoffset: 0;
-		width: 100px;
-		height: 100px;
+		width: 12rem;
+		height: 12rem;
 	}
 	98% {
-		width: 400px;
-		height: 400px;
+		width: calc(40rem + 1vw);
+		height: calc(40rem + 1vw);
 	}
 	100% {
 		stroke-dasharray: 600;
