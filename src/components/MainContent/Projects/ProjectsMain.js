@@ -1,75 +1,88 @@
 import ProjectCard from "./ProjectCards/ProjectCard";
 import styles from "./ProjectsMain.module.css";
 
-const ProjectsMain = () => {
+const ProjectsMain = ({ show }) => {
 	return (
 		<section className={styles.projectsMain}>
 			<ProjectCard
-				text="ManCaveGamez"
+				head="ManCaveGamez"
+				text=""
 				link="#"
 				img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
 				alt="ManCaveGamez"
 			/>
 			<ProjectCard
-				text="ManCaveGamez"
+				head="ManCaveGamez"
+				text=""
 				link="#"
 				img="https://expertphotography.b-cdn.net/wp-content/uploads/2022/05/Landscape-Photography-Sophie-Turner.jpg"
 				alt="ManCaveGamez"
 			/>
 			<ProjectCard
-				text="ManCaveGamez"
+				head="ManCaveGamez"
+				text=""
 				link="#"
 				img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
 				alt="ManCaveGamez"
 			/>
 			<ProjectCard
-				text="ManCaveGamez"
+				head="ManCaveGamez"
+				text=""
 				link="#"
 				img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
 				alt="ManCaveGamez"
 			/>
 			<ProjectCard
-				text="ManCaveGamez"
+				head="ManCaveGamez"
+				text=""
 				link="#"
 				img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
 				alt="ManCaveGamez"
 			/>
 			<ProjectCard
-				text="ManCaveGamez"
+				head="ManCaveGamez"
+				text=""
 				link="#"
 				img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
 				alt="ManCaveGamez"
 			/>
-			<ProjectCard
-				text="ManCaveGamez"
-				link="#"
-				img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
-				alt="ManCaveGamez"
-			/>
-			<ProjectCard
-				text="ManCaveGamez"
-				link="#"
-				img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
-				alt="ManCaveGamez"
-			/>
-			<ProjectCard
-				text="ManCaveGamez"
-				link="#"
-				img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
-				alt="ManCaveGamez"
-			/>
-			<ProjectCard
-				text="ManCaveGamez"
-				link="#"
-				img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
-				alt="ManCaveGamez"
-			/>
-			<ProjectCard
-				text="ManCaveGamez"
-				link="#"
-				img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
-				alt="ManCaveGamez"
-			/>
+			{show && [
+				<ProjectCard
+					head="ManCaveGamez"
+					text=""
+					link="#"
+					img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
+					alt="ManCaveGamez"
+				/>,
+				<ProjectCard
+					head="ManCaveGamez"
+					text=""
+					link="#"
+					img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
+					alt="ManCaveGamez"
+				/>,
+				<ProjectCard
+					head="ManCaveGamez"
+					text=""
+					link="#"
+					img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
+					alt="ManCaveGamez"
+				/>,
+				<ProjectCard
+					head="ManCaveGamez"
+					text=""
+					link="#"
+					img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
+					alt="ManCaveGamez"
+				/>,
+				<ProjectCard
+					head="ManCaveGamez"
+					text=""
+					link="#"
+					img="https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg"
+					alt="ManCaveGamez"
+				/>,
+			]}
 		</section>
 	);
 };

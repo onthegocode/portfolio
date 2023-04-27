@@ -1,6 +1,8 @@
 import TechBoxes from "./TechBoxes/TechBoxes.js";
 import ReferralBox from "./ReferralBox/ReferralBox.js";
 import styles from "./AboutTech.module.css";
+import Robert from "./RobertMcDonald.png";
+import Cindy from "./CindyJohnson.png";
 
 const AboutTech = () => {
 	return (
@@ -46,12 +48,15 @@ const AboutTech = () => {
 			</p>
 			<div className={styles["aboutTech-referrals"]}>
 				<ReferralBox
-					text="Robert McDonald"
-					innerText="Software Engineer"
+					name="Robert McDonald"
+					text="Senior Software Engineer"
+					img={Robert}
 					link="https://www.linkedin.com/in/robert-mcdonald-01b5b912/"
 				/>
 				<ReferralBox
-					text="Cindy Johnson"
+					name="Cindy Johnson"
+					text="Vice President at threaded marketing"
+					img={Cindy}
 					innerText="Senior Marketer"
 					link="https://www.linkedin.com/in/cindy-johnson-6217156/"
 				/>

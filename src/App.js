@@ -11,7 +11,7 @@ function App() {
 
 	//Loader
 	const loadedState = () => {
-		setTimeout(() => (document.body.style.overflowY = "visible"), 2500);
+		setTimeout(() => document.body.classList.remove("hidOverflowY"), 2500);
 		setTimeout(() => {
 			setLoaded(false);
 		}, 4000);

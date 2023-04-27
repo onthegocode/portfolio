@@ -44,11 +44,11 @@
 
 @keyframes fadein {
 	0% {
-		z-index: 100;
+		z-index: 1000;
 		background-color: #252a34;
 	}
 	78% {
-		z-index: 100;
+		z-index: 1000;
 		background-color: #252a34;
 	}
 	100% {

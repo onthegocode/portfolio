@@ -9,38 +9,30 @@
 }
 
 .projectCard--h4 {
-	font-family: "Montserrat", sans-serif;
-	color: #fff;
-	font-size: 2rem;
-	font-weight: 400;
-	position: absolute;
-	left: 50%;
-	bottom: 50%;
-	transform: translate(-50%, 50%);
-	z-index: 1;
-	transition: 0.3s ease;
 }
 .projectCard--img {
 	height: 300px;
 	width: 100%;
 	object-fit: cover;
 }
-.projectCard::after {
-	content: "";
+.projectCard--inner {
+	font-family: "Montserrat", sans-serif;
 	position: absolute;
-	left: 0%;
-	bottom: 0%;
+	left: 50%;
+	bottom: 50%;
+	transform: translate(-50%, 50%);
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+
+	z-index: 1;
 	transition: 0.3s ease;
 }
 .projectCard:hover {
 	box-shadow: 0px 8px 30px rgba(8, 217, 214, 0.15);
 }
-.projectCard:hover::after {
-	background-color: transparent;
+.projectCard:hover .projectCard--inner {
+	background-color: rgba(0, 0, 0, 0.6);
 }
 .projectCard:hover .projectCard--h4 {
-	color: transparent;
+	color: white;
 }

@@ -3,34 +3,60 @@
 .referralBox:visited {
 	display: inline-block;
 	text-decoration: none;
-	color: rgba(37, 42, 52, 0.95);
-	background-color: #eaeaea;
-	border-radius: 4px;
+	position: relative;
+	transition: 0.3s ease;
+}
+
+.referralBox__container {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+.referralBox__img-container {
+	position: relative;
+	height: 8rem;
+	width: 8rem;
+}
+.referralBox__img-container svg {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	stroke: #ff2e63;
+	stroke-width: 4px;
+	fill: transparent;
+}
+.referralBox__img-container circle {
+	stroke-dasharray: 301;
+	stroke-dashoffset: 301;
+	transition: all 0.8s;
+	transition-timing-function: cubic-bezier(0.4, 0.08, 0, 0.97);
+}
+.referralBox:hover .referralBox__img-container circle {
+	stroke-dashoffset: 0;
+}
+.referralBox--img {
+	height: 8rem;
+	width: 8rem;
+	border-radius: 100%;
+	object-fit: cover;
+}
+.referralBox__innerContainer {
+	color: rgba(255, 255, 255, 0.8);
+	transform: translateY(-6px);
+	transition: 0.3s ease;
+}
+.referralBox--h5 {
+	position: relative;
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 600;
-	padding: 0.4rem 1rem;
-	position: relative;
-	overflow: hidden;
-	transition: 0.3s ease;
+	display: inline-block;
+	margin-bottom: 0.6rem;
 }
-.referralBox:hover {
-	background-color: #ff2e63;
-	color: transparent;
+.referralBox--p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.4rem;
 }
-.referralBox:active {
-	background-color: #08d9d6;
-}
-.referralBox-inner {
-	color: transparent;
-	content: "Software Engineer";
-	position: absolute;
-	left: 8px;
-	bottom: 5px;
-	transform: translateX(110%);
-	transition: 0.3s ease;
-}
-.referralBox:hover .referralBox-inner {
-	transform: translateX(0%);
+.referralBox:hover .referralBox__innerContainer {
 	color: #fff;
 }

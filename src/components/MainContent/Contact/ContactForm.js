@@ -1,37 +1,29 @@
 import MainBtn from "../../Buttons/MainBtn";
+import ContactInput from "./ContactInput";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
 	return (
 		<form className={styles.contactForm}>
-			<div className={styles["contactForm-1"]}>
-				<div>
-					<input type="text" for="name" />
-					<label id="name" name="name">
-						Name
-					</label>
+			<div className={styles.contactForm__container}>
+				<div className={styles["contactForm-1"]}>
+					<ContactInput text="Name" type="text" formFor="name" />
+					<ContactInput text="Email" type="email" formFor="email" />
 				</div>
 				<div>
-					<input type="email" />
-					<label>Email</label>
+					<ContactInput text="Subject" type="text" formFor="subject" />
+				</div>
+				<div className={styles.textarea}>
+					<textarea for="message" placeholder="Message"></textarea>
+					<label id="message" name="message"></label>
 				</div>
 			</div>
-			<div>
-				<input type="text" />
-				<label>Subject</label>
-			</div>
-			<div>
-				<input type="text" />
-				<textarea placeholder="Message"></textarea>
-			</div>
-			<button>
+			<button type="submit" className={styles.submit}>
 				<MainBtn
 					className={styles.btn}
-					text="Show More"
-					link="#GetInTouch"
+					text="Send message!"
 					btn1Color="btn1ColorRed"
 					btn2Color="btn1ColorBlue"
-					align="btnCenter"
 				/>
 			</button>
 		</form>

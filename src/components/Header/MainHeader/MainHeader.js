@@ -1,7 +1,14 @@
+import React, { useState, userState } from "react";
 import MainBtn from "../../Buttons/MainBtn";
 import styles from "./MainHeader.module.css";
 
+import Modal from "../../Modal/Modal";
+
 const MainHeader = () => {
+	const [test, testSet] = useState(false);
+	const testhandler = () => {
+		testSet(!test);
+	};
 	return (
 		<div className={styles["main__header-container"]}>
 			<div className={styles["main__header-container--inner"]}>
@@ -13,12 +20,15 @@ const MainHeader = () => {
 					applications, that meet client goals.
 				</p>
 			</div>
+
 			<MainBtn
+				onClick={testhandler}
 				text="Get In Touch"
 				link="#GetInTouch"
 				btn1Color="btn1ColorRed"
 				btn2Color="btn1ColorBlue"
 			/>
+			{test && <Modal />}
 		</div>
 	);
 };

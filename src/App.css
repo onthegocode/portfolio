@@ -9,7 +9,6 @@ html {
 	font-size: 62.5%;
 }
 body {
-	overflow-y: hidden;
 	overflow-x: hidden;
 	font-family: "Montserrat", sans-serif;
 	background-color: #252a34;
@@ -36,4 +35,8 @@ body::-webkit-scrollbar-thumb {
 
 a:hover .upwork path {
 	fill: #08d9d6 !important;
+}
+
+.hidOverflowY {
+	overflow-y: hidden;
 }
