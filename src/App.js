@@ -5,7 +5,6 @@ import MainContent from "./components/MainContent/MainContent";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader"; //make styles component only using styled-components
 import SideSocial from "./components/SideSocial/SideSocial";
-import gsap from "gsap";
 
 // let tl = gsap.timeline({ defaults: { ease: "Expo.easeOut" } });
 
@@ -14,7 +13,6 @@ function App() {
 
 	//Loader
 	const loadedState = () => {
-		let tl = gsap.timeline({ defaults: { ease: "Expo.easeOut" } });
 		setTimeout(() => {
 			document.body.classList.remove("hidOverflowY");
 		}, 2500);
