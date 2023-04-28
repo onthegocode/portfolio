@@ -14,7 +14,7 @@ const Nav = () => {
 				</section>
 				<section className={styles["nav__container-links"]}>
 					<NavLinks text="About" url="about" offset={-55} /> /
-					<NavLinks text="Projects" url="projects" offset={0} /> /
+					<NavLinks text="Projects" url="projects" offset={40} /> /
 					<NavLinks text="Resume" url={resume} on={true} />
 				</section>
 			</div>

@@ -10,21 +10,23 @@ const Projects = () => {
 		setShows(!shows);
 	};
 	return (
-		<Sections id="projects" className={styles.projects}>
-			<Headers
-				title="Projects"
-				text="Here are a couple of projects I have worked."
-				color="redU"
-			/>
-			<ProjectsMain show={shows} />
-			<MainBtn
-				onClick={showClick}
-				text="Show More"
-				link="#GetInTouch"
-				btn1Color="btn2ColorRed"
-				btn2Color="btn2ColorBlue"
-				align="btnCenter"
-			/>
+		<Sections id="projects" className={`${styles.projects}`}>
+			<div className="mainSection">
+				<Headers
+					title="Projects"
+					text="Here are a couple of projects I have worked."
+					color="redU"
+				/>
+				<ProjectsMain show={shows} />
+				<MainBtn
+					onClick={showClick}
+					text="Show More"
+					link="#GetInTouch"
+					btn1Color="btn2ColorRed"
+					btn2Color="btn2ColorBlue"
+					align="btnCenter"
+				/>
+			</div>
 		</Sections>
 	);
 };
