@@ -2,7 +2,7 @@ import React from "react";
 import NavLinks from "./NavLinks";
 import Logo from "../../Loader/Logo";
 import styles from "./Nav.module.css";
-
+import resume from "./Resume.pdf";
 const Nav = () => {
 	return (
 		<nav className="nav">
@@ -13,9 +13,9 @@ const Nav = () => {
 					</a>
 				</section>
 				<section className={styles["nav__container-links"]}>
-					<NavLinks text="About" url="#projects" /> /
-					<NavLinks text="Projects" url="#about" /> /
-					<NavLinks text="Resume" url="#Resume" />
+					<NavLinks text="About" url="about" offset={-55} /> /
+					<NavLinks text="Projects" url="projects" offset={0} /> /
+					<NavLinks text="Resume" url={resume} on={true} />
 				</section>
 			</div>
 		</nav>

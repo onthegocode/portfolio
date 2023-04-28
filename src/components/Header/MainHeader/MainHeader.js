@@ -10,7 +10,7 @@ const MainHeader = () => {
 		testSet(!test);
 	};
 	return (
-		<div className={styles["main__header-container"]}>
+		<div className={`${styles["main__header-container"]}`}>
 			<div className={styles["main__header-container--inner"]}>
 				<span className={styles["highlighted-intro"]}>Hi I'm,</span>
 				<h1 className={styles.name}>Andrew Rivera</h1>
@@ -24,7 +24,7 @@ const MainHeader = () => {
 			<MainBtn
 				onClick={testhandler}
 				text="Get In Touch"
-				link="#GetInTouch"
+				link="mailto:andrew@onthegocode.com"
 				btn1Color="btn1ColorRed"
 				btn2Color="btn1ColorBlue"
 			/>

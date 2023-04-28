@@ -1,9 +1,5 @@
 .about {
-	display: flex;
-	flex-direction: column;
-	gap: 4rem;
 	background-color: #3b3f48;
-	padding: 8rem 16rem 8rem;
 }
 
 @media only screen and (max-width: 1460px) {

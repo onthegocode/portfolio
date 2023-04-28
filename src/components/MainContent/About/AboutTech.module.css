@@ -22,11 +22,11 @@
 	display: flex;
 	gap: 1.5rem;
 	flex-wrap: wrap;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 }
 .aboutTech-referrals {
 	display: flex;
-	gap: 1.5rem;
+	gap: 2rem;
 	flex-wrap: wrap;
 	margin-bottom: 2rem;
 }
