@@ -2,6 +2,7 @@
 My Portfolio Website made using React
 
 ## How to run:
-1) Download zip
-2) npm install
-3) npm start
+1) Download Nodejs
+2) Download zip
+3) npm install
+4) npm start
