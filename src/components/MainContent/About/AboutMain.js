@@ -4,7 +4,7 @@ import styles from "./AboutMain.module.css";
 
 const AboutMain = () => {
 	return (
-		<section className={styles.aboutMain}>
+		<section className={`${styles.aboutMain} mainAbout`}>
 			<AboutKnowme />
 			<AboutTech />
 		</section>

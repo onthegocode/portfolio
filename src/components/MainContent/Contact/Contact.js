@@ -7,7 +7,7 @@ import styles from "./Contact.module.css";
 const Contact = () => {
 	return (
 		<Sections className={`${styles.contact} `}>
-			<div className="mainSection">
+			<div>
 				<Headers
 					title="Get In Touch"
 					text="Looking to onboard a web developer or need a freelance job done? Feel free to reach out even if its just to say hello, I’ll try my best to get back to you!"

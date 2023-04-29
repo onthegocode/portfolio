@@ -1,0 +1,99 @@
+.projectCard {
+	display: inline-block;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.4);
+	transform: translateY(-30px);
+	opacity: 0;
+}
+.projectCard--content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	bottom: 55%;
+	transform: translate(-50%, 50%);
+	color: transparent;
+}
+.projectCard--h4 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 3rem;
+	transition: 0.3s ease-in-out;
+}
+
+.projectCard--content span {
+	position: absolute;
+	bottom: 36%;
+	left: 50%;
+	width: 2px;
+	height: 0;
+	background-color: #08d9d6;
+	transform: translate(-50%, 50%);
+	transition: 0.3s ease;
+}
+.projectCard--p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.4rem;
+}
+
+.projectCard--img {
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+}
+.projectCard--inner {
+	position: absolute;
+	left: 0%;
+	bottom: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: 0.3s ease;
+}
+.projectCard:hover {
+	box-shadow: 0px 8px 30px rgba(8, 217, 214, 0.15);
+}
+.projectCard:hover .projectCard--inner {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.projectCard:hover .projectCard--content {
+	color: white;
+}
+.projectCard:hover .projectCard--content span {
+	height: 1.2rem;
+}
+.projectCard:hover .projectCard--h4 {
+	margin-bottom: 1.4rem;
+}
+
+.btn {
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%, 100%);
+	color: transparent;
+	font-size: 1.3rem;
+	font-weight: 800;
+	padding: 1.8rem 2.8rem;
+	transition: 0.4s ease;
+}
+.btn::before,
+.btn::after {
+	border-color: transparent;
+	transition: 0.3s ease;
+}
+.projectCard:hover .btn {
+	color: #fff;
+	transform: translate(-50%, -100%);
+}
+.projectCard:hover .btn::before {
+	border-color: #ff2e63;
+}
+.projectCard:hover .btn::after {
+	border-color: #08d9d6;
+}

@@ -14,6 +14,8 @@
 .headers--h2 {
 	font-family: "Montserrat", sans-serif;
 	font-size: 3.2rem;
+	opacity: 0;
+	transform: translateY(50px);
 }
 
 .headers--underscore {
@@ -21,6 +23,7 @@
 	height: 6px;
 	border-radius: 100px;
 	margin-top: 1.5rem;
+	opacity: 0;
 }
 .blueU {
 	background-color: #08d9d6;
@@ -35,4 +38,5 @@
 	color: rgba(255, 255, 255, 0.95);
 	text-align: center;
 	width: 75rem;
+	opacity: 0;
 }

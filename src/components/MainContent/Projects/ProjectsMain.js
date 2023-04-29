@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCards/ProjectCard";
 import styles from "./ProjectsMain.module.css";
+import "./ProjectsMain.css";
 
 const ProjectsMain = ({ show }) => {
 	return (

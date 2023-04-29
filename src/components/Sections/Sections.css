@@ -1,0 +1,80 @@
+.section {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 10rem 16rem 10rem;
+}
+
+.animate h2 {
+	animation: fadeinUp 0.4s ease forwards;
+}
+.animate span {
+	animation: fadein 0.4s ease forwards;
+	animation-delay: 250ms;
+}
+.animate p {
+	animation: fadein 0.4s ease forwards;
+	animation-delay: 500ms;
+}
+.animate section {
+	animation: fadein 0.4s ease forwards;
+	animation-delay: 500ms;
+}
+
+.animate .projectCard:nth-child(1) {
+	animation: cardFade 1s ease forwards;
+	animation-delay: 0;
+}
+.animate .projectCard:nth-child(2) {
+	animation: cardFade 1s ease forwards;
+	animation-delay: 100ms;
+}
+.animate .projectCard:nth-child(3) {
+	animation: cardFade 1s ease forwards;
+	animation-delay: 200ms;
+}
+.animate .projectCard:nth-child(4) {
+	animation: cardFade 1s ease forwards;
+	animation-delay: 300ms;
+}
+.animate .projectCard:nth-child(5) {
+	animation: cardFade 1s ease forwards;
+	animation-delay: 400ms;
+}
+.animate .projectCard:nth-child(6) {
+	animation: cardFade 1s ease forwards;
+	animation-delay: 500ms;
+}
+.animate .projectCard:nth-child(7) {
+	animation: cardFade 1s ease forwards;
+	animation-delay: 0;
+}
+.animate .projectCard:nth-child(8) {
+	animation: cardFade 1s ease forwards;
+	animation-delay: 100ms;
+}
+.animate .projectCard:nth-child(9) {
+	animation: cardFade 1s ease forwards;
+	animation-delay: 200ms;
+}
+.animate .projectCard:nth-child(10) {
+	animation: cardFade 1s ease forwards;
+	animation-delay: 300ms;
+}
+@keyframes cardFade {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeinUp {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadein {
+	to {
+		opacity: 1;
+	}
+}
