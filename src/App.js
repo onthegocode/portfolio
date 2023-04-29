@@ -10,7 +10,6 @@ import SideSocial from "./components/SideSocial/SideSocial";
 
 function App() {
 	const [loaded, setLoaded] = useState(true);
-	const [side, setSide] = useState(false);
 
 	//Loader
 	const loadedState = () => {
@@ -22,15 +21,13 @@ function App() {
 		}, 4000);
 	};
 	window.addEventListener("load", loadedState);
-	const isTrue = (val) => {
-		setSide(val);
-	};
+
 	return (
 		<>
 			{loaded && <Loader />}
 			<Header />
-			<MainContent func={isTrue} />
-			<SideSocial val={side} />
+			<MainContent />
+			<SideSocial />
 			<Footer />
 		</>
 	);

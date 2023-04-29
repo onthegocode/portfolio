@@ -2,10 +2,9 @@ import SideSocialItem from "./SideSocialItem";
 import SideSocialIcons from "./SideSocialIcons";
 import styles from "./SideSocial.module.css";
 
-const SideSocial = ({ val }) => {
+const SideSocial = () => {
 	return (
-		<div
-			className={`${styles.sideSocial} ${val && "Socialred"} mainSideSocial `}>
+		<div className={`${styles.sideSocial} mainSideSocial `}>
 			<ul className={styles["main__social-container"]}>
 				<SideSocialItem
 					link="https://github.com/onthegocode"
