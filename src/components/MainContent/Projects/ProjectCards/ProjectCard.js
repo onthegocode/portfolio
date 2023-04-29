@@ -13,6 +13,8 @@ const ProjectCard = ({ head, type, text, link, img, alt }) => {
 				</div>
 				<MainBtn
 					className={styles.btn}
+					nonBtn={true}
+					link="#"
 					text={type}
 					btn1Color="btn2ColorRed"
 					btn2Color="btn2ColorBlue"

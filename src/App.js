@@ -19,18 +19,6 @@ function App() {
 		setTimeout(() => {
 			setLoaded(false);
 		}, 4000);
-
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach(
-				(entry) => {
-					entry.target.classList.toggle("fadein", entry.isIntersecting);
-				},
-				{ threshold: 1 }
-			);
-		});
-		document.querySelectorAll(".mainSection").forEach((e) => {
-			observer.observe(e);
-		});
 	};
 	window.addEventListener("load", loadedState);
 
