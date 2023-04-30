@@ -1,11 +1,17 @@
+import React, { useState } from "react";
+import Modal from "./../../../Modal/Modal";
 import styles from "./ReferralBox.module.css";
 
-const ReferralBox = ({ name, text, link, img, alt }) => {
+const ReferralBox = ({ name, text, func, img, alt, onClick }) => {
 	return (
 		<>
-			<a
+			<div
 				className={styles.referralBox}
-				href={link}
+				// href="#"
+				onClick={() => {
+					func();
+					onClick();
+				}}
 				target="_blank"
 				rel="noreferrer">
 				<div className={styles["referralBox__container"]}>
@@ -20,7 +26,7 @@ const ReferralBox = ({ name, text, link, img, alt }) => {
 						<p className={styles["referralBox--p"]}>{text}</p>
 					</div>
 				</div>
-			</a>
+			</div>
 		</>
 	);
 };

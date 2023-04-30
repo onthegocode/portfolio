@@ -20,7 +20,7 @@ const Projects = () => {
 				<ProjectsMain show={shows} />
 				<MainBtn
 					onClick={showClick}
-					text="Show More"
+					text={!shows ? "Show More" : "Show Less"}
 					link="#GetInTouch"
 					btn1Color="btn2ColorRed"
 					btn2Color="btn2ColorBlue"

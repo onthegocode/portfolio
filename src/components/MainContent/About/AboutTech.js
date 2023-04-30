@@ -4,7 +4,7 @@ import styles from "./AboutTech.module.css";
 import Robert from "./RobertMcDonald.png";
 import Cindy from "./CindyJohnson.png";
 
-const AboutTech = () => {
+const AboutTech = ({ func, setContent }) => {
 	return (
 		<div className={styles.aboutTech}>
 			<h3 className={styles["aboutTech-h3"]}>Technologies & Referrals </h3>
@@ -48,12 +48,20 @@ const AboutTech = () => {
 			</p>
 			<div className={styles["aboutTech-referrals"]}>
 				<ReferralBox
+					func={func}
+					onClick={() => {
+						setContent("Robert");
+					}}
 					name="Robert McDonald"
 					text="Senior Software Engineer"
 					img={Robert}
 					link="https://www.linkedin.com/in/robert-mcdonald-01b5b912/"
 				/>
 				<ReferralBox
+					func={func}
+					onClick={() => {
+						setContent("Cindy");
+					}}
 					name="Cindy Johnson"
 					text="Vice President at threaded marketing"
 					img={Cindy}

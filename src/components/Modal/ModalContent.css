@@ -1,0 +1,113 @@
+.modalContainer {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	animation: fadeGrow 0.3s ease;
+}
+
+.modalContent {
+	background-color: #eaeaea;
+	height: 45rem;
+	width: 80rem;
+	border-radius: 12px;
+	overflow: hidden;
+}
+.modalHead {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+	height: 40%;
+	width: 100%;
+	background-color: #3b3f48;
+}
+.modalHeadImg {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+}
+.modalMainContent {
+	color: #1a1a1a;
+	text-align: center;
+}
+.modalHeadContent h2 {
+	font-size: 2.4rem;
+}
+.modalHeadContent p {
+	font-size: 1.4rem;
+}
+.modalMainContent h4 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2.4rem;
+	position: relative;
+	margin: 2rem 0;
+}
+.modalMainContent h4::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -40%;
+	width: 3rem;
+	height: 0.6rem;
+	border-radius: 40px;
+	transform: translateX(-50%);
+	background-color: #ff2e63;
+}
+.modalMainContent p {
+	font-family: "Open Sans", sans-serif;
+	padding: 0 4rem;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	padding-top: 1rem;
+}
+.modalSocial {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	align-items: center;
+	margin-top: 4rem;
+}
+.modalSocial svg path {
+	stroke: #ff2e63;
+}
+.modalSocial svg,
+.modalSocial svg path {
+	transition: 0.3s ease;
+}
+.modalSocial svg:hover {
+	transform: translateY(-5px);
+}
+.modalSocial svg:hover path {
+	stroke: #08d9d6;
+}
+
+@keyframes fadeGrow {
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		text-replace: scale(1);
+	}
+}
+
+.modalExitBtn {
+	all: unset;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.modalExitBtn svg path {
+	stroke: rgba(255, 255, 255, 0.8);
+	transition: 0.3s ease;
+}
+
+.modalExitBtn:hover svg path {
+	stroke: #ff2e63;
+}

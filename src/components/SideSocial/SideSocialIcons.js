@@ -105,6 +105,57 @@ const SideSocialIcons = ({ social }) => {
 				/>
 			</svg>
 		),
+		mail: (
+			<svg
+				className="mail"
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M4 7H20C21.1 7 22 7.9 22 9V21C22 22.1 21.1 23 20 23H4C2.9 23 2 22.1 2 21V9C2 7.9 2.9 7 4 7Z"
+					stroke="white"
+					strokeOpacity="0.8"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M22 9L12 16L2 9"
+					stroke="white"
+					strokeOpacity="0.8"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+			</svg>
+		),
+		exit: (
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none">
+				<path
+					d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+					stroke="black"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M15 9L9 15"
+					stroke="black"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M9 9L15 15"
+					stroke="black"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+			</svg>
+		),
 	};
 
 	return icons[social];

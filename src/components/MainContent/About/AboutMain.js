@@ -2,11 +2,11 @@ import AboutKnowme from "./AboutKnowme";
 import AboutTech from "./AboutTech";
 import styles from "./AboutMain.module.css";
 
-const AboutMain = () => {
+const AboutMain = ({ func, setContent }) => {
 	return (
 		<section className={`${styles.aboutMain} mainAbout`}>
 			<AboutKnowme />
-			<AboutTech />
+			<AboutTech func={func} setContent={setContent} />
 		</section>
 	);
 };
