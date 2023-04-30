@@ -26,3 +26,14 @@
 .footer-link:hover .footer-text {
 	color: #08d9d6;
 }
+
+@media only screen and (max-width: 780px) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		gap: 4rem;
+	}
+}

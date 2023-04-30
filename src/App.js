@@ -27,7 +27,6 @@ function App() {
 			{loaded && <Loader />}
 			<Header />
 			<MainContent />
-			<SideSocial />
 			<Footer />
 		</>
 	);

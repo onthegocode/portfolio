@@ -1,0 +1,135 @@
+.modalProjectContainer {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	padding: 4rem;
+	overflow-x: hidden;
+	animation: fadeGrow 0.3s ease;
+}
+
+.modalProjectContent {
+	max-width: 75rem;
+	background-color: #fff;
+	border-radius: 12px;
+	overflow: hidden;
+	position: relative;
+}
+
+.modalProjectHead {
+	all: unset;
+	cursor: pointer;
+	height: 20%;
+	background-size: cover;
+	background-position: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	background-color: #3b3f48;
+	transition: 0.3s ease;
+	padding: 4rem;
+}
+
+.modalProjectHead h2 {
+	font-size: 4rem;
+}
+
+.modalProjectHead h6 {
+	font-size: 1.2rem;
+	padding: 0.6rem 1.2rem;
+	border-radius: 2rem;
+	background-color: #ff2e63;
+	transition: 0.3s ease;
+}
+
+.modalProjectHead:hover h6 {
+	background-color: #08d9d6;
+}
+
+.modalProjectMain {
+	color: #1a1a1a;
+	padding: 2rem 0 3rem 0;
+}
+
+.modalProjectMain h4 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2.4rem;
+	position: relative;
+	margin: 1rem 0 2rem 0;
+}
+.modalProjectMain h4::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -40%;
+	width: 3rem;
+	height: 0.6rem;
+	border-radius: 40px;
+	transform: translateX(-50%);
+	background-color: #ff2e63;
+}
+
+.modalProjectMain p {
+	font-family: "Open Sans", sans-serif;
+	max-width: 80rem;
+	padding: 0 4rem;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	padding-top: 1rem;
+}
+
+.modalProjectDetails {
+	margin-bottom: 4rem;
+}
+
+.modalProjectTechBoxes {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	margin-top: 4rem;
+	flex-wrap: wrap;
+}
+.modalProjectLinks {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	margin-top: 6rem;
+}
+.modalProjectLinks svg,
+.modalProjectLinks svg path {
+	transition: 0.3s ease;
+}
+.modalProjectLinks svg {
+	width: 25px;
+	height: 25px;
+}
+.modalProjectLinks svg path {
+	stroke: #ff2e63;
+}
+
+.modalProjectLinks svg:hover {
+	transform: translateY(-5px);
+}
+.modalProjectLinks svg:hover path {
+	stroke: #08d9d6;
+}
+
+@media only screen and (max-width: 960px) {
+	.modalProjectHead h2 {
+		font-size: 5rem;
+	}
+	.modalProjectHead h6 {
+		font-size: 1.4rem;
+	}
+	.modalProjectMain h4 {
+		font-size: 3rem;
+	}
+	.modalProjectMain p {
+		font-size: 1.6rem;
+	}
+	.modalProjectTech .modalProjectTechBoxes a {
+		font-size: 1.8rem;
+	}
+}

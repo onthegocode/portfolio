@@ -72,15 +72,15 @@
 }
 @media only screen and (max-width: 630px) {
 	.name {
-		font-size: 3rem;
+		font-size: 3.2rem;
 	}
 	.title {
-		font-size: 3rem;
+		font-size: 3.2rem;
 	}
 	.main__header-container--inner {
-		font-size: 3rem;
+		font-size: 3.2rem;
 	}
 	.text {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 }

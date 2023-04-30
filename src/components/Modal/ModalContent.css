@@ -6,7 +6,7 @@
 }
 
 .modalContent {
-	background-color: #eaeaea;
+	background-color: #fff;
 	max-width: 80rem;
 	border-radius: 12px;
 	overflow: hidden;
@@ -89,10 +89,12 @@
 @keyframes fadeGrow {
 	0% {
 		opacity: 0;
+		overflow-y: hidden;
 		transform: scale(0.5);
 	}
 	100% {
 		opacity: 1;
+		overflow-y: hidden;
 		text-replace: scale(1);
 	}
 }
@@ -112,4 +114,23 @@
 
 .modalExitBtn:hover svg path {
 	stroke: #ff2e63;
+}
+
+@media only screen and (max-width: 960px) {
+	.modalHeadImg {
+		width: 12rem;
+		height: 12rem;
+	}
+	.modalHeadContent h2 {
+		font-size: 3rem;
+	}
+	.modalHeadContent p {
+		font-size: 1.6rem;
+	}
+	.modalMainContent h4 {
+		font-size: 3rem;
+	}
+	.modalMainContent p {
+		font-size: 1.6rem;
+	}
 }

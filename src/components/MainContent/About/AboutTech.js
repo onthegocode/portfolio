@@ -26,7 +26,7 @@ const AboutTech = ({ func, setContent }) => {
 					link="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 				/>
 				<TechBoxes text="jQuery" link="https://jquery.com/" />
-				<TechBoxes text="React" link="https://react.dev/" />
+				<TechBoxes text="ReactJS" link="https://react.dev/" />
 				<TechBoxes text="WordPress" link="https://wordpress.com/" />
 				<TechBoxes text="Shopify" link="https://www.shopify.com/" />
 				<TechBoxes text="Liquid" link="https://shopify.dev/docs/api/liquid" />

@@ -1,8 +1,10 @@
+import SideSocial from "../SideSocial/SideSocial";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
 	return (
 		<footer className={styles.footer}>
+			<SideSocial />
 			<div className={styles.footer__container}>
 				<a
 					href="mailto:andrew@onthegocode.com"

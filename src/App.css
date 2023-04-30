@@ -18,14 +18,14 @@ body {
 
 /* Scroll Bar */
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
 	width: 8px;
 }
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
 	background-color: rgba(241, 245, 249, 0.8);
 	border-radius: 1rem;
 }
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
 	background: #f1f5f9;
 }
 

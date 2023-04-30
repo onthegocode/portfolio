@@ -2,8 +2,8 @@ import ProjectCard from "./ProjectCards/ProjectCard";
 import styles from "./ProjectsMain.module.css";
 import "./ProjectsMain.css";
 
-const ProjectsMain = ({ show, openModal, setOpenModal }) => {
-	const modalHandler = (val) => {
+const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
+	const modalHandler = () => {
 		setOpenModal(!openModal);
 	};
 	const projects = [
@@ -14,6 +14,7 @@ const ProjectsMain = ({ show, openModal, setOpenModal }) => {
 			link: "#",
 			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
 			alt: "ManCaveGamez",
+			mType: "typkup",
 		},
 		{
 			type: "Client Project",
@@ -22,6 +23,7 @@ const ProjectsMain = ({ show, openModal, setOpenModal }) => {
 			link: "#",
 			img: "https://expertphotography.b-cdn.net/wp-content/uploads/2022/05/Landscape-Photography-Sophie-Turner.jpg",
 			alt: "ManCaveGamez",
+			mType: "mancavegamez",
 		},
 		{
 			type: "Client Project",
@@ -30,6 +32,7 @@ const ProjectsMain = ({ show, openModal, setOpenModal }) => {
 			link: "#",
 			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
 			alt: "ManCaveGamez",
+			mType: "occfit",
 		},
 		{
 			type: "Client Project",
@@ -38,6 +41,7 @@ const ProjectsMain = ({ show, openModal, setOpenModal }) => {
 			link: "#",
 			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
 			alt: "ManCaveGamez",
+			mType: "ecotwist",
 		},
 		{
 			type: "Course Project",
@@ -46,6 +50,7 @@ const ProjectsMain = ({ show, openModal, setOpenModal }) => {
 			link: "#",
 			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
 			alt: "ManCaveGamez",
+			mType: "mapty",
 		},
 		{
 			type: "Client Project",
@@ -54,24 +59,107 @@ const ProjectsMain = ({ show, openModal, setOpenModal }) => {
 			link: "#",
 			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
 			alt: "ManCaveGamez",
+			mType: "iframewrapper",
 		},
-	];
-	const showProjects = [
 		{
 			type: "Client Project",
-			head: "Odor Release Technology",
-			text: "",
+			head: "Odor Release",
+			text: "Landing Page",
 			link: "#",
 			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
 			alt: "ManCaveGamez",
+			mType: "odorrelease",
+		},
+		{
+			type: "Personal Project",
+			head: "Portfolio Site",
+			text: "Personal Portfolio Website",
+			link: "#",
+			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
+			alt: "ManCaveGamez",
+			mType: "portfolio",
 		},
 	];
 
+	let width = window.innerWidth;
+	if (width < 1560 && width >= 1140) {
+		return (
+			<section className={styles.projectsMain}>
+				{projects.slice(0, 4).map((p) => (
+					<ProjectCard
+						set={() => {
+							modalHandler();
+							modalType(p.mType);
+						}}
+						type={p.type}
+						head={p.head}
+						text={p.text}
+						img={p.img}
+						alt={p.alt}
+						key={p.head}
+					/>
+				))}
+				{show &&
+					projects.slice(4, projects.length).map((p) => (
+						<ProjectCard
+							set={() => {
+								modalHandler();
+								modalType(p.mType);
+							}}
+							type={p.type}
+							head={p.head}
+							text={p.text}
+							img={p.img}
+							alt={p.alt}
+							key={p.head}
+						/>
+					))}
+			</section>
+		);
+	} else if (width < 1140) {
+		return (
+			<section className={styles.projectsMain}>
+				{projects.slice(0, 3).map((p) => (
+					<ProjectCard
+						set={() => {
+							modalHandler();
+							modalType(p.mType);
+						}}
+						type={p.type}
+						head={p.head}
+						text={p.text}
+						img={p.img}
+						alt={p.alt}
+						key={p.head}
+					/>
+				))}
+				{show &&
+					projects.slice(3, projects.length).map((p) => (
+						<ProjectCard
+							set={() => {
+								modalHandler();
+								modalType(p.mType);
+							}}
+							type={p.type}
+							head={p.head}
+							text={p.text}
+							img={p.img}
+							alt={p.alt}
+							key={p.head}
+						/>
+					))}
+			</section>
+		);
+	}
+
 	return (
 		<section className={styles.projectsMain}>
-			{projects.map((p) => (
+			{projects.slice(0, 6).map((p) => (
 				<ProjectCard
-					set={modalHandler}
+					set={() => {
+						modalHandler();
+						modalType(p.mType);
+					}}
 					type={p.type}
 					head={p.head}
 					text={p.text}
@@ -81,9 +169,12 @@ const ProjectsMain = ({ show, openModal, setOpenModal }) => {
 				/>
 			))}
 			{show &&
-				showProjects.map((p) => (
+				projects.slice(6, projects.length).map((p) => (
 					<ProjectCard
-						set={modalHandler}
+						set={() => {
+							modalHandler();
+							modalType(p.mType);
+						}}
 						type={p.type}
 						head={p.head}
 						text={p.text}
