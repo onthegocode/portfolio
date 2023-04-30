@@ -31,14 +31,14 @@ const ModalContent = ({
 				<div className="modalMainContent">
 					<h4>About</h4>
 					<p>{text}</p>
-				</div>
-				<div className="modalSocial">
-					<a href={link} target="_blank" rel="noreferrer">
-						<SideSocialIcons social="linkedin" />
-					</a>
-					<a href={`mailto:${mail}`} target="_blank" rel="noreferrer">
-						<SideSocialIcons social="mail" />
-					</a>
+					<div className="modalSocial">
+						<a href={link} target="_blank" rel="noreferrer">
+							<SideSocialIcons social="linkedin" />
+						</a>
+						<a href={`mailto:${mail}`} target="_blank" rel="noreferrer">
+							<SideSocialIcons social="mail" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

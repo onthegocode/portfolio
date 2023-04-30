@@ -2,7 +2,10 @@ import ProjectCard from "./ProjectCards/ProjectCard";
 import styles from "./ProjectsMain.module.css";
 import "./ProjectsMain.css";
 
-const ProjectsMain = ({ show }) => {
+const ProjectsMain = ({ show, openModal, setOpenModal }) => {
+	const modalHandler = (val) => {
+		setOpenModal(!openModal);
+	};
 	const projects = [
 		{
 			type: "Client Project",
@@ -68,23 +71,25 @@ const ProjectsMain = ({ show }) => {
 		<section className={styles.projectsMain}>
 			{projects.map((p) => (
 				<ProjectCard
+					set={modalHandler}
 					type={p.type}
 					head={p.head}
 					text={p.text}
-					link={p.link}
 					img={p.img}
 					alt={p.alt}
+					key={p.head}
 				/>
 			))}
 			{show &&
 				showProjects.map((p) => (
 					<ProjectCard
+						set={modalHandler}
 						type={p.type}
 						head={p.head}
 						text={p.text}
-						link={p.link}
 						img={p.img}
 						alt={p.alt}
+						key={p.head}
 					/>
 				))}
 		</section>

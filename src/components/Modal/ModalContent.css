@@ -7,10 +7,10 @@
 
 .modalContent {
 	background-color: #eaeaea;
-	height: 45rem;
-	width: 80rem;
+	max-width: 80rem;
 	border-radius: 12px;
 	overflow: hidden;
+	margin: 4rem;
 }
 .modalHead {
 	position: relative;
@@ -23,6 +23,7 @@
 	height: 40%;
 	width: 100%;
 	background-color: #3b3f48;
+	padding: 2rem 0;
 }
 .modalHeadImg {
 	width: 10rem;
@@ -32,6 +33,7 @@
 .modalMainContent {
 	color: #1a1a1a;
 	text-align: center;
+	padding: 2rem 0 3rem 0;
 }
 .modalHeadContent h2 {
 	font-size: 2.4rem;
@@ -43,7 +45,7 @@
 	font-family: "Montserrat", sans-serif;
 	font-size: 2.4rem;
 	position: relative;
-	margin: 2rem 0;
+	margin: 1rem 0 2rem 0;
 }
 .modalMainContent h4::after {
 	content: "";

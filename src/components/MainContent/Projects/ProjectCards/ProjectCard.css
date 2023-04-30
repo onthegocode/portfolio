@@ -1,4 +1,6 @@
 .projectCard {
+	all: unset;
+	cursor: pointer;
 	display: inline-block;
 	border-radius: 4px;
 	overflow: hidden;

@@ -1,9 +1,9 @@
 import MainBtn from "../../../Buttons/MainBtn";
 import "./ProjectCard.css";
 
-const ProjectCard = ({ head, type, text, link, img, alt }) => {
+const ProjectCard = ({ head, type, text, link, img, alt, set }) => {
 	return (
-		<a href={link} className="projectCard">
+		<button className="projectCard" onClick={() => set(alt)}>
 			<img src={img} className="projectCard--img" alt={alt} />
 			<span className="projectCard--inner">
 				<div className="projectCard--content">
@@ -21,7 +21,7 @@ const ProjectCard = ({ head, type, text, link, img, alt }) => {
 					align="btnCenter"
 				/>
 			</span>
-		</a>
+		</button>
 	);
 };
 

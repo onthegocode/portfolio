@@ -63,7 +63,7 @@ const AboutTech = ({ func, setContent }) => {
 						setContent("Cindy");
 					}}
 					name="Cindy Johnson"
-					text="Vice President at threaded marketing"
+					text="Vice President At Threaded Marketing"
 					img={Cindy}
 					innerText="Senior Marketer"
 					link="https://www.linkedin.com/in/cindy-johnson-6217156/"
