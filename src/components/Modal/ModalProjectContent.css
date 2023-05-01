@@ -90,6 +90,7 @@
 	justify-content: center;
 	margin-top: 4rem;
 	flex-wrap: wrap;
+	padding: 0 1rem;
 }
 .modalProjectLinks {
 	display: flex;
@@ -131,5 +132,29 @@
 	}
 	.modalProjectTech .modalProjectTechBoxes a {
 		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.modalProjectDetails p {
+		padding: 1rem 2rem 0;
+	}
+	.modalProjectContainer {
+		padding: 4rem 1rem;
+	}
+}
+@media screen and (max-width: 380px) {
+	.modalProjectHead h2 {
+		font-size: 4rem;
+	}
+	.modalProjectHead h6 {
+		font-size: 1.2rem;
+	}
+	.modalProjectMain h4 {
+		font-size: 2.4rem;
+	}
+	.modalProjectDetails p {
+		font-size: 1.4rem;
+		padding: 1rem 1rem 0;
 	}
 }

@@ -99,3 +99,9 @@
 .projectCard:hover .btn::after {
 	border-color: #08d9d6;
 }
+
+@media screen and (max-width: 325px) {
+	.projectCard--inner {
+		display: none;
+	}
+}

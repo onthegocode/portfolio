@@ -16,3 +16,25 @@
 		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	}
 }
+@media only screen and (max-width: 400px) {
+	.projectsMain {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		/* margin: 4rem auto; */
+		gap: 1rem;
+		margin: 0 -2rem;
+		margin-bottom: 2rem;
+	}
+	.projectsMain img {
+		height: 30rem;
+	}
+}
+@media only screen and (max-width: 325px) {
+	.projectsMain {
+		grid-template-columns: 1fr;
+		margin: 0 -3rem;
+		margin-bottom: 2rem;
+	}
+	.projectsMain img {
+		height: 25rem;
+	}
+}

@@ -14,6 +14,7 @@ const Projects = () => {
 	const [modalType, setmodalType] = useState("");
 	const modalHandler = () => {
 		setOpenModal(!openModal);
+		document.body.classList.remove("modalOpened");
 	};
 	const modalTypeHandler = (val) => {
 		setmodalType(val);

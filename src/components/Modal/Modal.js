@@ -1,12 +1,11 @@
-import React, { useState } from "react";
 import "./Modal.css";
 
 const Modal = ({ open, onClose, children }) => {
 	if (!open) return null;
-	if (open) document.body.style.overflowY = "hidden";
+	if (open) document.body.classList.add("modalOpened");
 	const closeHandler = () => {
-		document.body.style.overflowY = "visible";
 		onClose();
+		document.body.classList.remove("modalOpened");
 	};
 	return (
 		<div className="modal overlay" onClick={closeHandler}>

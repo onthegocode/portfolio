@@ -13,6 +13,7 @@ const About = () => {
 	const [content, setContent] = useState("");
 	const modalHandler = () => {
 		SetOpenModal(!openModal);
+		document.body.classList.remove("modalOpened");
 	};
 
 	return (

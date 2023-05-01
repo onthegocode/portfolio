@@ -40,6 +40,9 @@ a:hover .nav-logo {
 }
 
 @media only screen and (max-width: 760px) {
+	.nav__container a svg {
+		width: 50px;
+	}
 	.nav__container-links {
 		position: fixed;
 		display: flex;
@@ -71,14 +74,13 @@ a:hover .nav-logo {
 	}
 	.nav__container-menu {
 		position: relative;
-		height: 24px;
 	}
 	.nav__container-menuInner {
 		position: absolute;
 		width: 6rem;
 		height: 3px;
 		background-color: #08d9d6;
-		top: 50px;
+		top: 55px;
 		right: 25px;
 		transition: 0.3s ease;
 	}

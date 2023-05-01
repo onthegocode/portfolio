@@ -61,3 +61,10 @@
 .referralBox:hover .referralBox__innerContainer {
 	color: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+	.referralBox__container {
+		flex-direction: column;
+		gap: 2rem;
+	}
+}

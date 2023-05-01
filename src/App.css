@@ -47,3 +47,7 @@ a:hover .upwork path {
 .Socialred .social:hover .upwork path {
 	fill: #ff2e63 !important;
 }
+
+.modalOpened {
+	overflow-y: hidden;
+}

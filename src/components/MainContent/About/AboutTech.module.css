@@ -38,3 +38,11 @@
 	.aboutTech-referrals {
 	}
 }
+@media only screen and (max-width: 600px) {
+	.aboutTech-technologies {
+		justify-content: center;
+	}
+	.aboutTech-referrals {
+		justify-content: center;
+	}
+}

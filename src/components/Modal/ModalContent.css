@@ -134,3 +134,31 @@
 		font-size: 1.6rem;
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	.modalContent {
+		margin: 1rem;
+	}
+	.modalMainContent p {
+		padding: 1rem 2rem 0;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.modalContent {
+		margin: 1rem;
+	}
+	.modalMainContent p {
+		font-size: 1.4rem;
+		padding: 1rem 1rem 0;
+	}
+	.modalHead img {
+		width: 10rem;
+		height: 10rem;
+	}
+	.modalHead h2 {
+		font-size: 2.4rem;
+	}
+	.modalHead p {
+		font-size: 1.4rem;
+	}
+}

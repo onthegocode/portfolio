@@ -79,6 +79,7 @@
 	}
 }
 
+/* MEDIA */
 @media only screen and (max-width: 860px) {
 	.section {
 		padding: 6rem 14rem 6rem !important;
@@ -87,5 +88,10 @@
 @media only screen and (max-width: 780px) {
 	.section {
 		padding: 6rem 8rem 6rem !important;
+	}
+}
+@media only screen and (max-width: 630px) {
+	.section {
+		padding: 6rem 3.2rem 6rem !important;
 	}
 }
