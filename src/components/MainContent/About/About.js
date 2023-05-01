@@ -21,7 +21,7 @@ const About = () => {
 			<div>
 				<Headers
 					title="About Me"
-					text="A software engineer who’s up to any challenge he faces and can learn anything with adequate time."
+					text="A software engineer who’s up to any challenge, and can learn anything with adequate time!"
 					color="blueU"
 				/>
 				<AboutMain func={modalHandler} setContent={setContent} />
@@ -44,7 +44,7 @@ const About = () => {
 							onClose={modalHandler}
 							h2="Cindy Johnson"
 							headContent="Vice President at Threaded Marketing Group"
-							text="I listen carefully and learn the intricacies of your business to craft a full-circle strategy that is purposeful, functional, and audience-specific. 22+ years of B2B, B2C, and non-profit marketing and communications experience, Built brands both from the ground up and rebranded existing ones, Experience in all facets of digital marketing, with expertise in marketing strategy, brand management, email marketing, pay-per-click advertising, and search engine optimization"
+							text="I listen carefully and learn the intricacies of your business to craft a full-circle strategy that is purposeful, functional, and audience-specific. 22+ years of B2B, B2C, and non-profit marketing and communications experience, Built brands both from the ground up and rebranded existing ones, Experience in all facets of digital marketing, with expertise in marketing strategy, brand management, email marketing, pay-per-click advertising, and search engine optimization."
 							img={Cindy}
 							alt="Cindy Johnson"
 							link="https://www.linkedin.com/in/cindy-johnson-6217156/"

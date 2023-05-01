@@ -10,8 +10,8 @@ const MainHeader = () => {
 				<h1 className={styles.name}>Andrew Rivera</h1>
 				<h2 className={styles.title}>A Dedicated Software Engineer</h2>
 				<p className={styles.text}>
-					Specializing in building Scalable, Dynamic, User-friendly sites and
-					applications, that meet client goals.
+					Specialize in building Scalable, Dynamic, User-friendly sites and
+					applications that meet client goals.
 				</p>
 			</div>
 

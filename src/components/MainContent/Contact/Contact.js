@@ -10,7 +10,7 @@ const Contact = () => {
 			<div>
 				<Headers
 					title="Get In Touch"
-					text="Looking to onboard a web developer or need a freelance job done? Feel free to reach out even if its just to say hello, I’ll try my best to get back to you!"
+					text="Looking to onboard a web developer or need a freelance job done? Feel free to reach out even if its just to say hello, I’ll make sure to get back to you!"
 					color="blueU"
 				/>
 				<section>
