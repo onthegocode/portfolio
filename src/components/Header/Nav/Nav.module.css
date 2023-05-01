@@ -20,6 +20,10 @@ a:hover .nav-logo {
 	transition: 0.3s ease;
 	animation: dash 2s ease-in;
 }
+.menuBtn {
+	all: unset;
+	cursor: pointer;
+}
 
 @keyframes dash {
 	0% {
@@ -32,5 +36,87 @@ a:hover .nav-logo {
 	}
 	85% {
 		stroke-dashoffset: 0;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.nav__container-links {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		left: 50%;
+		bottom: 50%;
+		transform: translate(-50%, -50%);
+		color: transparent;
+		width: 100%;
+		height: 100%;
+		background-color: #252a34;
+		z-index: 100;
+		transition: 0.4s ease;
+	}
+	.opened .nav__container-links {
+		transform: translate(-50%, 50%);
+	}
+
+	.menuBtn {
+		position: absolute;
+		top: 0%;
+		right: 0%;
+		z-index: 150;
+	}
+	.opened .menuBtn {
+		position: fixed;
+	}
+	.nav__container-menu {
+		position: relative;
+		height: 24px;
+	}
+	.nav__container-menuInner {
+		position: absolute;
+		width: 6rem;
+		height: 3px;
+		background-color: #08d9d6;
+		top: 50px;
+		right: 25px;
+		transition: 0.3s ease;
+	}
+	.nav__container-menuInner::before {
+		position: absolute;
+		display: inline-block;
+		content: "";
+		width: 4rem;
+		height: 3px;
+		background-color: #08d9d6;
+		margin: 1rem 0;
+		bottom: -18px;
+		right: 0%;
+		transition: 0.3s ease;
+	}
+	.nav__container-menuInner:after {
+		position: absolute;
+		display: inline-block;
+		content: "";
+		width: 2.2rem;
+		height: 3px;
+		background-color: #08d9d6;
+		bottom: -20px;
+		right: 0%;
+		transition: 0.3s ease;
+	}
+
+	.opened .nav__container-menuInner {
+		width: 0;
+		transform: rotate(360deg) translateY(10px);
+	}
+	.opened .nav__container-menuInner::after {
+		width: 4rem;
+		bottom: 5px;
+		transform: rotate(-225deg);
+	}
+	.opened .nav__container-menuInner::before {
+		bottom: -3px;
+		transform: rotate(-315deg);
 	}
 }

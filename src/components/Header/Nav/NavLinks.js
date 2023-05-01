@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-scroll";
 import styles from "./NavLinks.module.css";
 
-const NavLinks = ({ url, text, on, offset }) => {
+const NavLinks = ({ url, text, on, offset, onClick }) => {
 	if (on) {
 		return (
 			<a
+				onClick={onClick}
 				className={styles["navlink-btn"]}
 				href={url}
 				target="_blank"
@@ -16,6 +17,7 @@ const NavLinks = ({ url, text, on, offset }) => {
 	}
 	return (
 		<Link
+			onClick={onClick}
 			to={url}
 			spy={true}
 			smooth={true}

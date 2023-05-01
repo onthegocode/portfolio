@@ -26,3 +26,10 @@
 .navlink-btn:active::after {
 	background-color: #ff2e63;
 }
+
+@media only screen and (max-width: 760px) {
+	.navlink-btn {
+		font-size: 4rem;
+		font-weight: 600;
+	}
+}
