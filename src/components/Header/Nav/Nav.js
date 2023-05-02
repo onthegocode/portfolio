@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavLinks from "./NavLinks";
-import Logo from "../../Loader/Logo";
+import Logo from "../../Logo/Logo";
 import styles from "./Nav.module.css";
 import resume from "./Resume.pdf";
 const Nav = () => {
@@ -8,6 +8,13 @@ const Nav = () => {
 	const openHandler = () => {
 		setOpen(!open);
 	};
+	let navOffset1 = -55;
+	let navOffset2 = 40;
+	let width = window.innerWidth;
+	if (width < 600) {
+		navOffset1 = 0;
+		navOffset2 = 0;
+	}
 	return (
 		<nav className="nav">
 			<div className={`${styles.nav__container} ${open && styles.opened}`}>
@@ -26,14 +33,14 @@ const Nav = () => {
 						onClick={openHandler}
 						text="About"
 						url="about"
-						offset={-55}
+						offset={navOffset1}
 					/>{" "}
 					/
 					<NavLinks
 						onClick={openHandler}
 						text="Projects"
 						url="projects"
-						offset={40}
+						offset={navOffset2}
 					/>{" "}
 					/
 					<NavLinks

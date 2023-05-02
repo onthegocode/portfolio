@@ -1,7 +1,7 @@
 .modalContainer {
 	display: grid;
 	place-items: center;
-	height: 100vh;
+	height: 100%;
 	animation: fadeGrow 0.3s ease;
 }
 

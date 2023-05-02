@@ -1,9 +1,10 @@
 .modalProjectContainer {
 	display: grid;
 	place-items: center;
-	height: 100vh;
+	height: 100%;
 	padding: 4rem;
 	overflow-x: hidden;
+	overflow-y: scroll;
 	animation: fadeGrow 0.3s ease;
 }
 
@@ -11,12 +12,13 @@
 	max-width: 75rem;
 	background-color: #fff;
 	border-radius: 12px;
-	overflow: hidden;
 	position: relative;
+	margin-top: 2rem;
 }
 
 .modalProjectHead {
 	all: unset;
+	border-radius: 12px 12px 0 0;
 	cursor: pointer;
 	height: 20%;
 	background-size: cover;

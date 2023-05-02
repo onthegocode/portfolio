@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
@@ -7,25 +7,29 @@ import Loader from "./components/Loader/Loader";
 
 function App() {
 	const [loaded, setLoaded] = useState(true);
+	const [loadedHid, setLoadedHid] = useState(true);
 
 	//Loader
 	const loadedState = () => {
 		setTimeout(() => {
-			document.body.classList.remove("hidOverflowY");
+			setLoadedHid(false);
 		}, 2500);
 		setTimeout(() => {
 			setLoaded(false);
 		}, 4000);
 	};
-	window.addEventListener("load", loadedState);
+
+	useEffect(() => {
+		loadedState();
+	}, []);
 
 	return (
-		<>
-			{loaded && <Loader />}
+		<div className={`bodyMain ${loadedHid && "hidOverflowY"}`}>
 			<Header />
 			<MainContent />
 			<Footer />
-		</>
+			{loaded && <Loader />}
+		</div>
 	);
 }
 

@@ -83,7 +83,43 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 	];
 
 	let width = window.innerWidth;
-	if (width < 1560 && width >= 1140) {
+	let height = window.innerHeight;
+
+	if (width <= 1024 && width > 400 && height < 700) {
+		return (
+			<section className={styles.projectsMain}>
+				{projects.slice(0, 2).map((p) => (
+					<ProjectCard
+						set={() => {
+							modalHandler();
+							modalType(p.mType);
+						}}
+						type={p.type}
+						head={p.head}
+						text={p.text}
+						img={p.img}
+						alt={p.alt}
+						key={p.head}
+					/>
+				))}
+				{show &&
+					projects.slice(2, projects.length).map((p) => (
+						<ProjectCard
+							set={() => {
+								modalHandler();
+								modalType(p.mType);
+							}}
+							type={p.type}
+							head={p.head}
+							text={p.text}
+							img={p.img}
+							alt={p.alt}
+							key={p.head}
+						/>
+					))}
+			</section>
+		);
+	} else if (width < 1560 && width >= 1140) {
 		return (
 			<section className={styles.projectsMain}>
 				{projects.slice(0, 4).map((p) => (

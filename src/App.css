@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html {
 	font-size: 62.5%;
 }
@@ -37,17 +38,11 @@ a:hover .upwork path {
 	fill: #08d9d6;
 }
 
-.hidOverflowY {
-	overflow-y: hidden;
-}
-
-.Socialred .social:hover svg path {
-	stroke: #ff2e63;
-}
-.Socialred .social:hover .upwork path {
-	fill: #ff2e63 !important;
-}
-
 .modalOpened {
 	overflow-y: hidden;
+}
+.hidOverflowY {
+	position: relative;
+	overflow-y: hidden;
+	height: 100vh;
 }

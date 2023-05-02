@@ -1,6 +1,6 @@
 .loader__container {
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	display: grid;
 	place-items: center;
 	position: fixed;
@@ -54,5 +54,29 @@
 	100% {
 		z-index: -1;
 		background-color: transparent;
+	}
+}
+@keyframes dash2 {
+	0% {
+		stroke-dasharray: 600;
+		stroke-dashoffset: 600;
+	}
+	15% {
+		stroke-dasharray: 600;
+		stroke-dashoffset: 600;
+	}
+	80% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dasharray: 600;
+		stroke-dashoffset: 600;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.loader__svg {
+		animation: dash2 3s linear forwards;
+		width: 20rem;
+		height: 20rem;
 	}
 }

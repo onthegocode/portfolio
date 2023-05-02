@@ -65,8 +65,10 @@ a:hover .nav-logo {
 
 	.menuBtn {
 		position: absolute;
-		top: 0%;
-		right: 0%;
+		height: 60px;
+		width: 60px;
+		top: 4%;
+		right: 5%;
 		z-index: 150;
 	}
 	.opened .menuBtn {
@@ -80,8 +82,8 @@ a:hover .nav-logo {
 		width: 6rem;
 		height: 3px;
 		background-color: #08d9d6;
-		top: 60px;
-		right: 25px;
+		/* top: 60px;
+		right: 25px; */
 		transition: 0.3s ease;
 	}
 	.nav__container-menuInner::before {
@@ -110,15 +112,25 @@ a:hover .nav-logo {
 
 	.opened .nav__container-menuInner {
 		width: 0;
-		transform: rotate(360deg) translateY(10px);
+		transform: rotate(360deg) translate(45px, 12px);
 	}
 	.opened .nav__container-menuInner::after {
 		width: 4rem;
 		bottom: 5px;
+		right: 0;
 		transform: rotate(-225deg);
 	}
 	.opened .nav__container-menuInner::before {
 		bottom: -3px;
+		right: 0;
 		transform: rotate(-315deg);
+	}
+	a:hover .nav-logo {
+		animation: none;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.menuBtn {
+		top: 2.5%;
 	}
 }
