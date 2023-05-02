@@ -7,6 +7,7 @@
 	position: relative;
 	color: inherit;
 	font-family: "Montserrat", sans-serif;
+	cursor: pointer;
 }
 .btnCenter {
 	align-self: center;
