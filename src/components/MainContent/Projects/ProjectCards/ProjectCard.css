@@ -100,7 +100,7 @@
 	border-color: #08d9d6;
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 400px) {
 	.projectCard--inner {
 		display: none;
 	}

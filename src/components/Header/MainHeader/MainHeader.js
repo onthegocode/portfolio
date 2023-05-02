@@ -1,4 +1,3 @@
-import React, { useState, userState } from "react";
 import MainBtn from "../../Buttons/MainBtn";
 import styles from "./MainHeader.module.css";
 

@@ -9,6 +9,15 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 	const projects = [
 		{
 			type: "Client Project",
+			head: "iFrame Wrapper",
+			text: "Payment Processing System Wrapper",
+			link: "#",
+			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
+			alt: "ManCaveGamez",
+			mType: "iframewrapper",
+		},
+		{
+			type: "Client Project",
 			head: "Typkup",
 			text: "Ecommerce Website",
 			link: "#",
@@ -44,6 +53,15 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 			mType: "ecotwist",
 		},
 		{
+			type: "Client Project",
+			head: "Odor Release",
+			text: "Company Website",
+			link: "#",
+			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
+			alt: "ManCaveGamez",
+			mType: "odorrelease",
+		},
+		{
 			type: "Course Project",
 			head: "Mapty",
 			text: "Hiking/Cycling tracker",
@@ -52,24 +70,7 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 			alt: "ManCaveGamez",
 			mType: "mapty",
 		},
-		{
-			type: "Client Project",
-			head: "iFrame Wrapper",
-			text: "Payment Processing iFrame Wrapper",
-			link: "#",
-			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
-			alt: "ManCaveGamez",
-			mType: "iframewrapper",
-		},
-		{
-			type: "Client Project",
-			head: "Odor Release",
-			text: "Landing Page",
-			link: "#",
-			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
-			alt: "ManCaveGamez",
-			mType: "odorrelease",
-		},
+
 		{
 			type: "Personal Project",
 			head: "Portfolio Site",
