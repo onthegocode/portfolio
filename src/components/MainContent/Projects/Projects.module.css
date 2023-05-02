@@ -5,3 +5,7 @@
 	text-align: center;
 	padding: 8rem 16rem 8rem;
 }
+
+.projects a {
+	cursor: pointer;
+}

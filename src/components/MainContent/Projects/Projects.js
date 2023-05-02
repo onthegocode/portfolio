@@ -281,7 +281,6 @@ const Projects = () => {
 				<MainBtn
 					onClick={showClick}
 					text={!shows ? "Show More" : "Show Less"}
-					link="#GetInTouch"
 					btn1Color="btn2ColorRed"
 					btn2Color="btn2ColorBlue"
 					align="btnCenter"
