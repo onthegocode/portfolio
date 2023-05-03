@@ -24,17 +24,11 @@
 		margin: 0 -2rem;
 		margin-bottom: 2rem;
 	}
-	.projectsMain img {
-		height: 30rem;
-	}
 }
 @media only screen and (max-width: 325px) {
 	.projectsMain {
 		grid-template-columns: 1fr;
 		margin: 0 -3rem;
 		margin-bottom: 2rem;
-	}
-	.projectsMain img {
-		height: 25rem;
 	}
 }
