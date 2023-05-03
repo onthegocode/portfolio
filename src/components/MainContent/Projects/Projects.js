@@ -22,10 +22,9 @@ const Projects = () => {
 	const showClick = () => {
 		setShows(!shows);
 	};
-
 	const projects = {
 		mancavegamez: {
-			head: "ManCaveGamez",
+			head: window.innerWidth < 600 ? "ManCave Gamez" : "ManCaveGamez",
 			subhead: "Client Project",
 			p: `ManCaveGamez is an online retailer specializing in sports and table games, built using Shopify. My responsibility was to implement new features, help fix bugs, and general website maintenance. One feature I implementing was a "Mega Menu" that would be easily editable by using Shopify admin page. I would work hand in hand with Cindy Johnson, to ensure I met client goals. `,
 			link: "https://mancavegamez.com/",

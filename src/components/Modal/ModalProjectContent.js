@@ -17,14 +17,25 @@ const ModalPojectContent = ({
 				onClick={(e) => {
 					e.stopPropagation();
 				}}>
-				<a
-					href={link}
-					target="_blank"
-					rel="noreferrer"
-					className="modalProjectHead">
-					<h2>{h2}</h2>
-					<h6>{subhead}</h6>
-				</a>
+				{window.innerWidth < 600 ? (
+					<div
+						href={link}
+						target="_blank"
+						rel="noreferrer"
+						className="modalProjectHead">
+						<h2>{h2}</h2>
+						<h6>{subhead}</h6>
+					</div>
+				) : (
+					<a
+						href={link}
+						target="_blank"
+						rel="noreferrer"
+						className="modalProjectHead">
+						<h2>{h2}</h2>
+						<h6>{subhead}</h6>
+					</a>
+				)}
 				<button
 					onClick={(e) => {
 						e.stopPropagation();
