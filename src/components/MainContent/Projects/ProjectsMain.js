@@ -1,5 +1,13 @@
 import ProjectCard from "./ProjectCards/ProjectCard";
 import styles from "./ProjectsMain.module.css";
+import typkup from "./imgs/typkupWebsite.png";
+import mancavegamez from "./imgs/mancavegamezWebsite.png";
+import wrapper from "./imgs/iframewrapperProcessingSystem.png";
+import occfit from "./imgs/occfitsolutionsWebsite.png";
+import ecotwist from "./imgs/ecotwistWebsite.png";
+import odor from "./imgs/odorreleaseWebsite.png";
+import mapty from "./imgs/maptyWebsite.png";
+import portfolio from "./imgs/portfolioWebsite.png";
 
 const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 	const modalHandler = () => {
@@ -11,8 +19,8 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 			head: "iFrame Wrapper",
 			text: "Payment Processing System Wrapper",
 			link: "#",
-			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
-			alt: "ManCaveGamez",
+			img: wrapper,
+			alt: "Payment Processing System Wrapper",
 			mType: "iframewrapper",
 		},
 		{
@@ -20,8 +28,8 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 			head: "Typkup",
 			text: "Ecommerce Website",
 			link: "#",
-			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
-			alt: "ManCaveGamez",
+			img: typkup,
+			alt: "Typkup",
 			mType: "typkup",
 		},
 		{
@@ -29,7 +37,7 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 			head: "ManCaveGamez",
 			text: "Ecommerce Sports Website",
 			link: "#",
-			img: "https://expertphotography.b-cdn.net/wp-content/uploads/2022/05/Landscape-Photography-Sophie-Turner.jpg",
+			img: mancavegamez,
 			alt: "ManCaveGamez",
 			mType: "mancavegamez",
 		},
@@ -38,8 +46,8 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 			head: "OccFit Solutions",
 			text: "Medical Footwear Ecommerce Website",
 			link: "#",
-			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
-			alt: "ManCaveGamez",
+			img: occfit,
+			alt: "OccFit Solutions",
 			mType: "occfit",
 		},
 		{
@@ -47,8 +55,8 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 			head: "EcoTwist",
 			text: "Ecommerce Detergent Website",
 			link: "#",
-			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
-			alt: "ManCaveGamez",
+			img: ecotwist,
+			alt: "EcoTwist",
 			mType: "ecotwist",
 		},
 		{
@@ -56,8 +64,8 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 			head: "Odor Release",
 			text: "Company Website",
 			link: "#",
-			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
-			alt: "ManCaveGamez",
+			img: odor,
+			alt: "Odor Release Technology",
 			mType: "odorrelease",
 		},
 		{
@@ -65,8 +73,8 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 			head: "Mapty",
 			text: "Hiking/Cycling tracker",
 			link: "#",
-			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
-			alt: "ManCaveGamez",
+			img: mapty,
+			alt: "Mapty",
 			mType: "mapty",
 		},
 
@@ -75,8 +83,8 @@ const ProjectsMain = ({ show, openModal, setOpenModal, modalType }) => {
 			head: "Portfolio Site",
 			text: "Personal Portfolio Website",
 			link: "#",
-			img: "https://www.greenwoodwildlife.org/wp-content/uploads/077thatlilbunny-scaled.jpg",
-			alt: "ManCaveGamez",
+			img: portfolio,
+			alt: "Portfolio Site Andrew Rivera Software Engineer - Frontend Developer",
 			mType: "portfolio",
 		},
 	];
