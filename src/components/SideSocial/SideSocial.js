@@ -15,7 +15,7 @@ const SideSocial = () => {
 					social={<SideSocialIcons social="upwork" />}
 				/>
 				<SideSocialItem
-					link="https://www.linkedin.com/in/ot-gc-803223168/"
+					link="https://www.linkedin.com/in/andrew-rivera-803223168/"
 					social={<SideSocialIcons social="linkedin" />}
 				/>
 				<SideSocialItem
