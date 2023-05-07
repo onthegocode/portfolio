@@ -10,6 +10,8 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-intersection-observer": "^9.4.3",
+		"react-router": "^6.11.1",
+		"react-router-dom": "^6.11.1",
 		"react-scripts": "^5.0.1",
 		"react-scroll": "^1.8.9",
 		"react-smooth": "^2.0.2",

@@ -13,7 +13,6 @@ const MainHeader = () => {
 					applications that meet client goals.
 				</p>
 			</div>
-
 			<MainBtn
 				text="Get In Touch"
 				link="mailto:andrew@onthegocode.com"
