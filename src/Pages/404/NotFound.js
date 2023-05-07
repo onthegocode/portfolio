@@ -19,9 +19,9 @@ const NotFound = () => {
 					</div>
 					<div className={styles.four2}>4</div>
 				</div>
-				<img className={styles.xwing} src={xwing} />
-				<img className={styles.blast1} src={blast} />
-				<img className={styles.blast2} src={blast} />
+				<img className={styles.xwing} src={xwing} alt="X-Wing" />
+				<img className={styles.blast1} src={blast} alt="Blaster Bolt" />
+				<img className={styles.blast2} src={blast} alt="Blaster Bolt" />
 				<MainBtn
 					text="Home"
 					link="/"
